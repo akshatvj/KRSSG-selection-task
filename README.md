@@ -17,3 +17,12 @@ Enter initial entries in task22.py and dynamic entrys in task22_inp.py
 ### Part 1
 simply make akshat2.cpp but make sure that you edit the image address in line 15 and 16
 ### Part 2
+create a catkin workspace and replace the src file with the given src file.
+
+ run catkin_make cmd in workspace
+
+source the setup.bash file the devl directroy
+
+open 3 terminal use rosrun in one terminal and turtlesim node in other terminal 
+
+and use rosrun beginner_tutorials talker.py cmd in work space to run the script
