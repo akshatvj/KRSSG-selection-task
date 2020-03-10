@@ -1,0 +1,25 @@
+Task 2
+pART 1
+First run the program
+Input all entries
+Now lift 2 will find the nearest pickup point and start going towards it
+And then lift 1 will find the other nearest pickup point but this time it will choose the nearest point with respect to the state of lift 2
+For example : if lift 2 is going upwards and both the lifts are on the same floor then it will find the nearest point below its current position
+              or if lift 2 is going upwards and have a position greater than lift 1 then lift 1 will find the closest pickup having position less than position of lift 2
+              and similarly we proceed if lift 2 is moving downward.
+Now we have both lifts moving towards their target pickup point, in process of moving, each lift will check if there is any person going in the same direction as the lift at every floor
+If there is any pickup we will call a function settarget defined in the class lift, which will set the target towards the nearest dropping point
+When the lift reaches the dropping point, it will drop the person and again call the function to set the new target
+If the lift becomes empty after dropping a person the state of lift will be changed to rest, and if any lift is in rest state we will change the state of system to the respective state and then the system will proceed accordinly
+Foe example : If lift 1 is at rest and lift 2 is moving upwards then the state of our system will be RU, now our system will check the respective position for lift 1 and 2
+              if lift 2 has the position less than lift 1 then lift 1 will check all the entries having pickup point less than position of lift 2 or the direction in which the person wants to go is down (opposite to the direction of lift 2), and start proceeding towards the nearest pickup point OR if lift 2 has a position greater than lift 1 then lift 1 will simply check all the pickup points having position less than lift 2.
+              Similarly we can proceed for the state UR.
+And that is how both the lifts will run until all the entries are satisfied.
+
+
+
+PART 2
+First run the code task221 and then run the code task222 in the new terminal, now enter the initial entries in the terminal of task221, now you can input the dynamic entries in task222.
+We will be using the same code for the system part (code task221)
+We will just add the dynamic inputs in the list of initial entries
+

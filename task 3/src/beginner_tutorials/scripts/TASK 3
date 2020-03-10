@@ -1,0 +1,11 @@
+TASK 3
+PART 1
+First put the image with staring point of colour green and ending point of colour red and obstacles of colour white.
+Image should be named image.png.
+Now run the code task31, this code will generate a path by applying rrt* on both starting and ending point
+And store the points of turns in the path in a text file named point.txt.
+
+
+PART 2
+Now when we have our points stored in a file named point.txt run the turtlesim node and then run mynode talker.py, this node will read the points from the file and give command to turtle to go towards that points by using proportionalities.
+And that is how our turtle will follow path.
